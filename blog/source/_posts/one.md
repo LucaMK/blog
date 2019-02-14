@@ -1,6 +1,8 @@
 ---
 title: 
 date: 2019-02-14 14:08:15
+categories: test
+type: "categories"
 tags:
 ---
 
