@@ -22,7 +22,7 @@
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   <script type="text/javascript">
-    var host = "yoursite.com";
+    var host = "blog.lkcool.top";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
   </script>
