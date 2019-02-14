@@ -1,5 +1,5 @@
 ---
-title: for...in for...each for...of 的区别
+title: for...in  for...of  forEach()的区别
 tags: js
 categories: js
 type: categories
