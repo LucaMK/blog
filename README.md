@@ -1,2 +1,2 @@
 # blog
-blog store
+blog repo
