@@ -1,4 +1,5 @@
-categories: test
+---
+categories: js
 type: categories
 date: 2019-02-14 14:08:15
 title: this is title
