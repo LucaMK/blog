@@ -67,7 +67,7 @@ pm2 start npm -- run start
 ```
 
 启动正常后可以看到
-![](/source/images/pm2.png)
+![](../images/pm2.png)
 
 此处id 为1 的即是 我们在服务端启动的 nuxt 项目
 
