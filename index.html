@@ -335,12 +335,24 @@
                 
               
 
-              <time title="创建时间：2019-04-24 00:00:00 / 修改时间：13:57:55" itemprop="dateCreated datePublished" datetime="2019-04-24T00:00:00+08:00">2019-04-24</time>
+              <time title="创建时间：2019-04-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-24T00:00:00+08:00">2019-04-24</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-29 13:57:53" itemprop="dateModified" datetime="2019-04-29T13:57:53+08:00">2019-04-29</time>
               
             
           </span>
@@ -392,7 +404,7 @@
 <p>将 .nuxt文件夹 nuxt.config.js package.json 上传到服务端 相应目录下(自行选择, 例如: /var/www/html);</p>
 <p>进入 /var/www/html 安装项目依赖 (此处默认服务端以安装node, 如果未安装请先安装node)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure></p>
 <p>pm2 启动项目<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start npm -- run start</span><br></pre></td></tr></table></figure></p>
-<p>启动正常后可以看到<br><img src="/source/images/pm2.png" alt=""></p>
+<p>启动正常后可以看到<br><img src="../images/pm2.png" alt=""></p>
 <p>此处id 为1 的即是 我们在服务端启动的 nuxt 项目</p>
 <p>这时 启动nginx<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx</span><br></pre></td></tr></table></figure></p>
 <p>访问 example.abc.com; 页面正常喧染。 vue spa 项目 改为 ssr 结束。<br>(注意: 服务端时没有 window, document 对象的, 所以这部分要在 浏览器喧染， 可以采用nuxt 的 <no-srr> 组件)。</no-srr></p>
@@ -884,6 +896,8 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                    
+                      
                     
                       
                     
