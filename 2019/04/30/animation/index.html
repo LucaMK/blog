@@ -104,12 +104,12 @@
 <meta property="og:site_name" content="LucaMk Blog">
 <meta property="og:description" content="###animation 示例  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&amp;lt;!-- cube 立方体 --&amp;gt;&amp;lt;div class=&amp;quot;foundation&amp;quot;&amp;gt;	&amp;lt;div cl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://blog.lkcool.top/2019/04/30/images/animation.gif">
-<meta property="og:updated_time" content="2019-04-30T06:02:42.062Z">
+<meta property="og:image" content="http://blog.lkcool.top/images/animation.gif">
+<meta property="og:updated_time" content="2019-04-30T06:09:45.780Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="animation 的使用">
 <meta name="twitter:description" content="###animation 示例  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&amp;lt;!-- cube 立方体 --&amp;gt;&amp;lt;div class=&amp;quot;foundation&amp;quot;&amp;gt;	&amp;lt;div cl">
-<meta name="twitter:image" content="http://blog.lkcool.top/2019/04/30/images/animation.gif">
+<meta name="twitter:image" content="http://blog.lkcool.top/images/animation.gif">
 
 
 
@@ -339,9 +339,13 @@
                 
               
 
-              <time title="创建时间：2019-04-30 14:02:42" itemprop="dateCreated datePublished" datetime="2019-04-30T14:02:42+08:00">2019-04-30</time>
+              <time title="创建时间：2019-04-30 14:02:42 / 修改时间：14:09:45" itemprop="dateCreated datePublished" datetime="2019-04-30T14:02:42+08:00">2019-04-30</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -375,7 +379,7 @@
 
       
         <p>###animation 示例</p>
-<p><img src="../images/animation.gif" alt="animation示例"></p>
+<p><img src="/images/animation.gif" alt="animation示例"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- cube 立方体 --&gt;</span><br><span class="line">&lt;div class=&quot;foundation&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;frount&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">//.css</span><br><span class="line"></span><br><span class="line">.foundation&#123;</span><br><span class="line">	width: 100px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	margin-left: 50px;</span><br><span class="line">	position: relative;</span><br><span class="line">	transform-style:  preserve-3d ;</span><br><span class="line">	transform:perspective(300px) translate3d(10px, 10px, 10px) ;</span><br><span class="line">	animation: 5s ease-in-out infinite circle alternate;</span><br><span class="line">&#125;</span><br><span class="line">.foundation&gt;div&#123;</span><br><span class="line">	width: 100px;</span><br><span class="line">	height: 100px;</span><br><span class="line">	background-color: rgba(0,0,0, .1);</span><br><span class="line">	position: absolute;</span><br><span class="line">	box-sizing: border-box;</span><br><span class="line">	border: 1px solid grey;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.frount&#123;</span><br><span class="line">	transform-origin: center;</span><br><span class="line">	transform: translate3d(0, 0, 50px);</span><br><span class="line">&#125;</span><br><span class="line">.back&#123;</span><br><span class="line">	transform: translate3d(0, 0, -50px);</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">	transform:  rotateY(90deg);</span><br><span class="line">	left: -50px;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">	transform-origin: center;</span><br><span class="line">	transform: translate3d(50px, 0, 0) rotateY(90deg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.top&#123;</span><br><span class="line">	transform-origin: center;</span><br><span class="line">	transform:translate3d(0, -50px, 0) rotateX(90deg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.bottom&#123;</span><br><span class="line">	transform-origin: center;</span><br><span class="line">	transform: translate3d(0, 50px, 0) rotateX(90deg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes circle&#123;</span><br><span class="line">	from &#123;transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg) scale3d(0, 0, 0);&#125;</span><br><span class="line">	to  &#123;transform: rotateX(-10deg) rotateY(360deg) rotateZ(0deg) scale3d(1, 1, 1);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="为什么使用animation-当让是将原本的静态页面动起来-增强体验度。"><a href="#为什么使用animation-当让是将原本的静态页面动起来-增强体验度。" class="headerlink" title="为什么使用animation , 当让是将原本的静态页面动起来, 增强体验度。"></a>为什么使用animation , 当让是将原本的静态页面动起来, 增强体验度。</h2><p>使得可以将从一个CSS样式配置转换到另一个CSS样式配置。动画包括两个部分:描述动画的样式规则和用于指定动画开始、结束以及中间点样式的<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@keyframes" target="_blank" rel="noopener">关键帧@keyframes</a>。</p>
 <p>相对于传统脚本实现动画技术, 使用css动画(animation)有三个主要有点:</p>
