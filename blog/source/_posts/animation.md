@@ -1,11 +1,13 @@
 ---
-title: animation 的使用 
-tags:	css
+title: animation 的使用
+tags: css
+date: 2019-04-30 14:02:42
 ---
+
 
 ###animation 示例
 
-![animation示例](../images/animation.gif)
+![animation示例](/images/animation.gif)
 
 ```base
 <!-- cube 立方体 -->
@@ -106,13 +108,27 @@ tags:	css
 
 ##animation的子属性
 
-1. animation-delay : 设置延迟时间。
+1. animation-delay : 设置延迟时间。(注意: 设置时间必须带上单位 s / ms, 不然则无效)
 
 2. animation-direction : 设置动画在每次运行完后是反向运行还是重新回到开始位置重复运行。
-
-3. animation-duration : 设置动画周期时长。
+	direction可选值有:
+	1. normal
+		每个循环内动画向前循环，换言之，每个动画循环结束，动画重置到起点重新开始，这是默认属性。
+	2. alternate
+		动画交替反向运行，反向运行时，动画按步后退，同时，带时间功能的函数也反向，比如，ease-in 在反向时成为ease-out。计数取决于开始时是奇数迭代还是偶数迭代
+	3. reverse
+		反向运行动画，每周期结束动画由尾到头运行。
+	4. alternate-reverse
+		反向交替， 反向开始交替
+		动画第一次运行时是反向的，然后下一次是正向，后面依次循环。决定奇数次或偶数次的计数从1开始。
+3. animation-duration : 设置动画周期时长。(注意: 设置时间必须带上单位 s / ms, 不然则无效)
 
 4. animation-iteration-count : 设置动画重复次数。
+	可选值:
+	1. infinite 无限
+		无限循环播放动画.
+	3. number 数值
+		动画播放的次数 不可为负值. 可以用小数定义循环(0.5 将播放动画到关键帧的一半（from 0 ~ 50%).
 
 5. animation-play-state : 允许暂停和回复动画。
 
@@ -121,3 +137,18 @@ tags:	css
 7. animation-fill-mode : 指定动画执行前后如何为目标元素引用样式。
 
 8. animation-name : 指定由@keyframes描述的关键帧名称。
+		1. none
+			特殊关键字，表示无关键帧。可以不改变其他标识符的顺序而使动画失效，或者使层叠的动画样式失效。
+		2. IDENT
+			标识动画的字符串，由大小写不敏感的字母a-z、数字0-9、下划线(_)和/或横线(-)组成。第一个非横线字符必须是字母，数字不能在字母前面，不允许两个横线出现在开始位置。
+
+###通常可以简写, 简写起来也较为方便
+
+/* @keyframes duration | timing-function | delay |  iteration-count | direction | fill-mode | play-state | name */
+	animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+/* @keyframes duration | timing-function | delay | name */
+  animation: 3s linear 1s slidein;
+
+/* @keyframes duration | name */
+  animation: 3s slidein;
