@@ -1,7 +1,9 @@
 ---
 title: 从零使用 webpack 搭建 vue单页项目(SPA)
 tags: webpack js
+date: 2019-05-15 17:26:01
 ---
+
 
 ## summary 摘要
 
@@ -230,6 +232,8 @@ module.exports = {
 
 当然 正常开发项目不是这样的, 会有一个开发模式 此处使用到 webpack-dev-server 简称[devServer](https://www.webpackjs.com/configuration/dev-server/)
 
+注意: 打包时本文中还未添加 代码分割 clean-webpack-plugin mini-css-extract-plugin 这样可以减小包的大小。---
+
 ## 开发模式 配置编写 
 
 在项目根目录创建webpack.dev.conf.js
@@ -345,6 +349,7 @@ package.json 中'script' 添加 执行命令
 ```
 
 成功之后 在浏览器中输入 localhost:8080 查看到本地项目的内容, 同时修改文件后 也能看到页面更改。所见即所得完成。
+
 
 webpack后期计划内容:
 
