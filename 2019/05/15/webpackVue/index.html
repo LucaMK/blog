@@ -99,15 +99,15 @@
   <meta name="description" content="summary 摘要首先本文简单介绍webpack, 并使用webpack4 实现 vue 单页项目的构建。 目标:   webpack简介 使用webpack搭建 vue单页项目的构建。  webpack简单介绍webpack 是一个JavaScript应用程序的 静态模块打包工具。 详细介绍可以查看官网 中文, 英文。 打包工具webpack使得前端模块化开发更加方便，核心部分:  入口(en">
 <meta name="keywords" content="webpack js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单聊一聊 webpack">
+<meta property="og:title" content="从零使用 webpack 搭建 vue单页项目(SPA)">
 <meta property="og:url" content="http://blog.lkcool.top/2019/05/15/webpackVue/index.html">
 <meta property="og:site_name" content="LucaMk Blog">
 <meta property="og:description" content="summary 摘要首先本文简单介绍webpack, 并使用webpack4 实现 vue 单页项目的构建。 目标:   webpack简介 使用webpack搭建 vue单页项目的构建。  webpack简单介绍webpack 是一个JavaScript应用程序的 静态模块打包工具。 详细介绍可以查看官网 中文, 英文。 打包工具webpack使得前端模块化开发更加方便，核心部分:  入口(en">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://blog.lkcool.top/images/webpack_vue2.6_folder.png">
-<meta property="og:updated_time" content="2019-05-15T06:12:10.270Z">
+<meta property="og:updated_time" content="2019-05-15T09:27:30.908Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单聊一聊 webpack">
+<meta name="twitter:title" content="从零使用 webpack 搭建 vue单页项目(SPA)">
 <meta name="twitter:description" content="summary 摘要首先本文简单介绍webpack, 并使用webpack4 实现 vue 单页项目的构建。 目标:   webpack简介 使用webpack搭建 vue单页项目的构建。  webpack简单介绍webpack 是一个JavaScript应用程序的 静态模块打包工具。 详细介绍可以查看官网 中文, 英文。 打包工具webpack使得前端模块化开发更加方便，核心部分:  入口(en">
 <meta name="twitter:image" content="http://blog.lkcool.top/images/webpack_vue2.6_folder.png">
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>简单聊一聊 webpack | LucaMk Blog</title>
+  <title>从零使用 webpack 搭建 vue单页项目(SPA) | LucaMk Blog</title>
   
 
 
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">简单聊一聊 webpack
+          <h1 class="post-title" itemprop="name headline">从零使用 webpack 搭建 vue单页项目(SPA)
 
               
             
@@ -339,9 +339,13 @@
                 
               
 
-              <time title="创建时间：2019-05-15 14:12:10" itemprop="dateCreated datePublished" datetime="2019-05-15T14:12:10+08:00">2019-05-15</time>
+              <time title="创建时间：2019-05-15 17:26:01 / 修改时间：17:27:30" itemprop="dateCreated datePublished" datetime="2019-05-15T17:26:01+08:00">2019-05-15</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -404,6 +408,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">	<span class="string">"build"</span>: <span class="string">"webpack"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 然后 执行 npm run build, 如果一切正常就会发现项目文件夹下 出现 dist 目录 这就是打包编译后的文件</span><br></pre></td></tr></table></figure>
 <p>当然现在直接访问 index.html 是没有页面渲染的，如果你有服务器可以放到服务器上即可出现之前编写的内容, 没有也没事，本地开启下nginx 服务代理指向当前dist目录 既可以在本地浏览器中 通过设置的 url 进行访问</p>
 <p>当然 正常开发项目不是这样的, 会有一个开发模式 此处使用到 webpack-dev-server 简称<a href="https://www.webpackjs.com/configuration/dev-server/" target="_blank" rel="noopener">devServer</a></p>
+<p>注意: 打包时本文中还未添加 代码分割 clean-webpack-plugin mini-css-extract-plugin 这样可以减小包的大小。—</p>
 <h2 id="开发模式-配置编写"><a href="#开发模式-配置编写" class="headerlink" title="开发模式 配置编写"></a>开发模式 配置编写</h2><p>在项目根目录创建webpack.dev.conf.js<br>api <a href="https://webpack.docschina.org/configuration/dev-server/" target="_blank" rel="noopener">目录</a><br>安装 webpack-dev-server </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;npm install webpack-dev-server --save-dev</span><br></pre></td></tr></table></figure>
 <p>把上面写的 打包配置稍微更改即可:</p>
@@ -465,10 +470,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/15/webpackVue-1/" rel="prev" title="从零使用 webpack 搭建 vue单页项目(SPA)">
-                从零使用 webpack 搭建 vue单页项目(SPA) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -540,7 +541,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
